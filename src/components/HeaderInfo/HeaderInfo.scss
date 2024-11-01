@@ -1,0 +1,60 @@
+.headerInfo {
+  position: absolute;
+  bottom: 0;
+  right: 70px;
+  &__wrapper {
+    overflow: hidden;
+  }
+
+  &__item {
+    width: 370px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    background: var(--color-yellow);
+    clip-path: polygon(7% 0, 100% 0, 100% 90%, 93% 100%, 0 100%, 0 10%);
+    padding: 25px 50px;
+    @media (max-width: 620px) {
+      width: 280px;
+      padding: 15px 25px;
+    }
+  }
+
+  &__headText {
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 400;
+    font-family: var(--font-archangelsk);
+
+    @media (max-width: 620px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &__button {
+    padding: 19px 50px;
+    background: #000;
+    margin-top: 30px;
+    color: var(--color-yellow);
+    font-family: var(--font-roboto);
+    font-weight: 700;
+    font-size: 17px;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: 0.5s ease-in-out;
+
+    &:hover {
+      background: var(--color-aqua);
+      color: #fff;
+      transition: 0.5s ease-in-out;
+    }
+  }
+
+  @media (max-width: 620px) {
+    right: 0;
+  }
+}
